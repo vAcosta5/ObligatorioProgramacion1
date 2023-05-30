@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PuertUY</title>
+    <link rel="website icon" type="png"
+        href="/logopagina/eeb59633be5fbc61f17be0e64112d625-vista-frontal-recortada-del-barco.png">
+</head>
+
+<link rel="stylesheet" href="style.css">
+
+<body
+    style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/e/e9/Puerto_De_Montevideo_%28198751415%29.jpeg);">
+    <center>
+        <!-- Nombre de la pagina -->
+        <div>
+            <h3 style="border: outset ; background-color: rgb(77, 134, 241) ; color: white;"> PuertUY.</h1>
+        </div>
+        <div id="acceso">
+            <form class="formulario">
+                <h3 style="border: outset ; background-color: rgb(241, 77, 77) ; color: white;">Acceso.</h3>
+                <input type="text" id="txtUsuario" placeholder="ID Usuario *">
+                <br>
+                <input type="password" id="txtContraseña" placeholder="Contraseña *">
+                <br>
+                <input type="button" id="btnIngresar" value="Ingresar">
+                <h5>Todos los campos son obligatorios.</h5>
+                <p id="olvidada"><a href="#">¿Ha olvidado su contraseña?</a></p>
+                <p id="registrar"><a href="#">¿No tiene cuenta? Registrese aquí.</a></p>
+            </form>
+        </div>
+        <!-- Sección donde se solicita el código de seguridad -->
+        <div id="codigoseguridad">
+            <form class="formulario">
+                <h3 style=>Código de seguridad</h3>
+                <input type="text" id="txtCorreoCodigo" placeholder="Correo electrónico *">
+                <br>
+                <input type="password" id="txtCodigo" placeholder="Introduzca el código *">
+                <br>
+                <input type="button" value="Verificar" id="btnVerificarCodigo">
+                <h5>Todos los campos son obligatorios.</h5>
+                <p id="reenviarcodigo"><a href="#">¿Olvido su código? ¡Pulse aquí!</a></p>
+                <p id="volver"><a href="#">Para volver a la página principal pulse aquí.</a></p>
+            </form>
+        </div>
+        <!-- Sección para cambiar la contraseña -->
+        <div id="cambiarcontraseña">
+            <form class="formulario">
+                <h3 style=>Cambio de contraseña.
+                </h3>
+                <input type="password" id="txtContraseñaNueva" placeholder="Contraseña nueva *">
+                <br>
+                <input type="password" id="txtContraseñaNuevaConfirmar" placeholder="Confirme contraseña *">
+                <br>
+                <input type="button" value="Cambiar contraseña." id="btnCambioContraseña">
+                <h5>Todos los campos son obligatorios.</h5>
+                <p id="volver2"><a href="#">Para volver a la página principal pulse aquí.</a></p>
+            </form>
+        </div>
+        <!-- Sección de registro de cuenta -->
+        <div id="crearcuenta">
+            <form style="width: 300px; text-align: center;  border-style: inset; background-color: aliceblue;"">
+            <h3 style=>Registro.</h3>
+                <img id="sinfoto" src="/avatar/sinfoto.png" width="100px" style="border: outset ;">
+                <br>
+                <input type="button" id="flecha" value="----->">
+                <br>
+                <input type="text" id="txtNombre" placeholder="Nombre *">
+                <br>
+                <input type="text" id="txtApellido" placeholder="Apellido *">
+                <br>
+                <input type="text" id="txtUsuarioNew" placeholder="ID Usuario *">
+                <br>
+                <input type="text" id="txtCorreo" placeholder="Prefijo del correo *">
+                <select id="slcCorreo">
+                    <option value="@gmail.com">@gmail.com</option>
+                    <option value="@outlook.com">@outlook.com</option>
+                    <option value="@hotmail.com">@hotmail.com</option>
+                </select>
+                <br>
+                <input type="password" id="txtContraseñaNew" placeholder="Contraseña *">
+                <h5>Para la contraseña: <br><br> ·Mínimo 5 carácteres <br>·Al menos una letra
+                    mayúscula <br>·Al menos una letra minúscula <br>·Al menos un número</h5>
+                <input type="button" value="Registrarse" id="btnRegistrarse">
+                <h5>Todos los campos son obligatorios.</h5>
+                <p id="volver3"><a href="#">Para volver a la página principal pulse aquí.</a></p>
+            </form>
+        </div>
+    </center>
+    <!-- Menú de ingreso del importador -->
+    <div id="ingresadoImportador">
+        <form style="border: inset ; width: 240px; background-color: #33475b ;">
+            <br>
+            <center>
+                <p style="background-color: white ; border: inset;" id="cerrarsesion"><a href="#">Cerrar sesión.</a></p>
+            </center>
+            <input type="button" id="crearSolicitud" value="Crear una solicitud de carga" class="tamanioInput">
+            <br><br>
+            <p style="color: white ;">·En este apartado podrá solicitar una carga de alguna mercadería proporcionada por
+                las empresas registradas en nuestra aplicación, en caso de interés ingrese.</p>
+            <br><br>
+            <input type="button" id="consultarSolicitud" value="Consultar sus solicitudes"
+                class="tamanioInput">
+            <br><br>
+            <p style="color: white ;">·Aquí podrá consultar el estado de las solicitudes en caso de que usted haya
+                solicitado una.</p>
+            <br>
+            <input type="button" id="cancelarSolicitud" value="Cancelar sus solicitudes" class="tamanioInput">
+            <br><br>
+            <p style="color: white ;">·Si no desea continuar con su solicitud puede iniciar el trámite de cancelación
+                desde este apartado.</p>
+            <br>
+            <input type="button" id="informacionEstadistica" value="Información estadística" class="tamanioInput">
+            <p style="color: white ;">·Aquí podrá ver todo tipo de información y estadísticas sobre su solicitud.</p>
+            <br>
+        </form>
+    </div>
+    <!-- Menú de ingreso de la empresa -->
+    <div id="ingresadoEmpresa">
+        <form style="border: inset ; width: 250px; background-color: #5b3333 ;">
+            <br>
+            <center>
+                <p style="background-color: white ; border: inset;" id="cerrarsesion1"><a href="#">Cerrar sesión.</a>
+                </p>
+            </center>
+            <input type="button" id="crearViajeBuque" value="Crea el viaje de un buque"
+                style='width:250px; height:35px'>
+            <p style="color: white ;">·Ingrese aquí para crear el viaje de un buque.</p>
+            <input type="button" id="asignarSolicitud" value="Asigna una solicitud de carga pendiente"
+                style='width:250px; height:35px'>
+            <p style="color: white ;">·Aquí podrá asignar una solicitud pendiente hacia Montevideo.</p>
+            <input type="button" id="rollover" value="Rollover de carga" style='width:250px; height:35px'>
+            <p style="color: white ;">·Desde este apartado podrá "rollear" un viaje a otro.</p>
+            <input type="button" id="manifiesto" value="Manifiesto de carga" style='width:250px; height:35px'>
+            <p style="color: white ;">·Emita un listado de su carga para un viaje.</p>
+            <input type="button" id="habilitarImportadores" value="Habilitar importadores deshabilitados"
+                style='width:250px; height:35px'>
+            <p style="color: white ;">·Analice y habilite los importadores que usted desee.</p>
+            <input type="button" id="listadeCarga" value="Lista de carga peligrosa" style='width:250px; height:35px'>
+            <p style="color: white ;">·Visualice que cargas son peligrosas para presentarlo a autoridades portuarias.
+            </p>
+            <p style='width:250px; height:35px; background-color: white;'></p>
+        </form>
+    </div>
+    <!-- Sección en el menú de importador donde se crea un viaje -->
+    <div id="creandoViaje">
+        <center>
+            <form style="border: inset ; width: 300px; background-color: white;">
+                <h3 style=>Crear una nueva
+                    solicitud de carga de su mercadería.</h3>
+                <label for="slcTipoCarga">Seleccione el tipo de carga: </label>
+                <select id="slcTipoCarga">
+                    <option value="CARGA_GENERAL">CARGA_GENERAL</option>
+                    <option value="REFRIGERADO">REFRIGERADO</option>
+                    <option value="CARGA_PELIGROSA">CARGA_PELIGROSA</option>
+                </select>
+                <br>
+                <label for="txtDescripcion">Ingrese una descripción de su carga</label>
+                <input type="text" id="txtDescripcion">
+                <br>
+                <label for="txtPuerto">Introduzca el puerto de origen</label>
+                <input type="text" id="txtPuerto">
+                <br>
+                <label for="idEmpresa">Id de la empresa</label>
+                <input type="text" id="idEmpresa">
+                <label for="txtCantidadContenedores">Cantidad de contenedores: </label>
+                <input type="number" id="txtCantidadContenedores" placeholder="Cantidad de contenedores *">
+                <br>
+                <input type="date" id="txtFechaPartida">
+                <br>
+                <input type="button" id="btnComprobarEmpresa" value="Comprueba la empresa">
+                <br>
+                <input type="button" value="Enviar" id="enviarSolicitud">
+                <h5>Todos los campos son obligatorios</h5>
+                <p id="volver4"><a href="#">Para volver a la página anterior pulse aquí.</a></p>
+            </form>
+        </center>
+    </div>
+    <!-- Sección del menú del importador donde ven las solicitudes-->
+    <div id="consultandoSolicitud">
+        <center>
+            <form style="border: inset ; width: 1500px; background-color: white;">
+                <h3 style=>Consultar sus
+                    solicitudes.</h3>
+                <br>
+                <table border="1" id="tablaSolicitud" style="width: 1500px;">
+                    <tr>
+                        <td><strong>Estado</strong></td>
+                        <td><strong>Tipo</strong></td>
+                        <td><strong>Descripción</strong></td>
+                        <td><strong>Puerto de Origen</strong></td>
+                        <td><strong>ID de la empresa</strong></td>
+                        <td><strong>Nombre de la empresa</strong></td>
+                        <td><strong>ID del importador</strong></td>
+                        <td><strong>Nombre del importador</strong></td>
+                        <td><strong>ID del viaje</strong></td>
+                        <td><strong>Cantidad de contenedores</strong></td>
+                        <td><strong>Nombre del buque</strong></td>
+                        <td><strong>Fecha de partida</strong></td>
+                        <td><strong>Fecha de llegada</strong></td>
+                    </tr>
+
+                </table>
+                <br>
+                <label for="txtBusqueda">Búsqueda</label>
+                <input type="text" id="txtBusqueda" placeholder="Búsqueda por descripción">
+                <br>
+                <input type="button" value="Buscar" id="btnbuscarDescripción">
+                <h5>Todos los campos son obligatorios</h5>
+                <p id="volver5"><a href="#">Para volver a la página anterior pulse aquí.</a></p>
+            </form>
+        </center>
+    </div>
+    <!-- Sección del menu de importador donde se cancela una solicitud -->
+    <div id="cancelandoSolicitud">
+        <center>
+            <form style="border: inset ; width: 300px; background-color: white;">
+                <h3 style=>Cancelar sus
+                    solicitudes.</h3>
+                <br>
+                <label for="txtIdCancelacion">Id del viaje</label>
+                <input type="text" id="txtIdCancelacion">
+                <br>
+                <h5>Solo pueden ser canceladas las solicitudes aún no confirmadas.</h5>
+                <input type="button" value="Cancelar" id="enviarCancelacion">
+                <p id="volver6"><a href="#">Para volver a la página anterior pulse aquí.</a></p>
+            </form>
+        </center>
+    </div>
+    <!-- Sección del menu de importador donde se ve la información estadística -->
+    <div id="informacionEstad">
+        <center>
+            <form style="border: inset ; width: 600px; background-color: white;">
+                <h3 style=>Información estadística.</h3>
+                <table border="1" id="estadistica1" style="width: 500px; text-align: center;">
+                    <td><strong>Porcentaje de cancelaciones</strong></td>
+                    <td><strong>Cancelaciones</strong></td>
+                    <td><strong>Total de solicitudes</strong></td>
+                </table>
+                <br>
+                <table border="1" id="estadistica2" style="width: 500px; text-align: center;">
+                    <td><strong>Próximas llegadas</strong></td>
+                    <td><strong>Viaje</strong></td>
+                </table>
+                <br>
+                <table border="1" id="estadistica3" style="width: 500px; text-align: center;">
+                    <td><strong>Porcentaje de participación de empresas</strong></td>
+                    <td><strong>Solicitudes dirigidas</strong></td>
+                    <td><strong>Total</strong></td>
+                    <td><strong>Empresa</strong></td>
+                </table>
+                <p id="volver7"><a href="#">Para volver a la página anterior pulse aquí.</a></p>
+            </form>
+        </center>
+    </div>
+    <!-- Sección del menú de la empresa donde se crea un viaje en buque-->
+    <div id="creandoViajeBuque">
+        <center>
+            <form style="border: inset ; width: 300px; background-color: white;">
+                <h3 style=>Crear el viaje de un buque </h3>
+                <label for="txtNombreBuque">Nombre del buque: </label>
+                <input type="text" id="txtNombreBuque" placeholder="Nombre del buque *">
+                <br>
+                <label for="txtCantidadContenedoresMaxima">Cantidad de contenedores maxima: </label>
+                <input type="number" id="txtCantidadContenedoresMaxima" placeholder="Cantidad máxima de contenedores *">
+                <br>
+                <label for="txtFechaLlegada">Fecha de llegada: </label>
+                <input type="date" id="txtFechaLlegada">
+                <br>
+                <input type="button" value="Crear viaje" id="btnCrearViaje">
+                <p id="volver8"><a href="#">Para volver a la página anterior pulse aquí.</a></p>
+            </form>
+        </center>
+    </div>
+    <!-- Sección del menú de la empresa donde se asigna una solicitud-->
+    <div id="asignandoSolicitud">
+        <center>
+            <form style="border: inset ; width: 300px; background-color: white;">
+                <h3 style=>Asignar una solicitud de carga pendiente </h3>
+                <label for="slcListas">Viajes</label>
+                <select id="slcListas">
+                </select>
+                <br>
+                <label for="slcBuques">Buques</label>
+                <select id="slcBuques"> </select>
+                <br>
+                <input type="button" value="Asignar" id="asignarLista">
+                <br>
+                <p id="volver9"><a href="#">Para volver a la página anterior pulse aquí.</a></p>
+            </form>
+        </center>
+    </div>
+    <!-- Sección del menú de la empresa donde se hace un Rollover-->
+    <div id="haciendoRollover">
+        <center>
+            <form style="border: inset ; width: 300px; background-color: white;">
+                <h3 style=>Rollover de carga</h3>
+                <label for="slcListasRollover">Viajes</label>
+                <select id="slcListasRollover"></select>
+                <br>
+                <input type="button" value="Mostrar opciones de viaje" id="mostrarOpciones">
+                <div id="selectRollover">
+                    <label for="selectBuques">Buques</label>
+                    <select id="slcBuquesRollover"></select>
+                    <br>
+                    <input type="button" value="Confirmar" id="btnConfirmarRollover">
+                </div>
+                <p id="volver10"><a href="#">Para volver a la página anterior pulse aquí.</a></p>
+            </form>
+        </center>
+    </div>
+    <!-- Sección del menú de la empresa donde se hace un manifiesto-->
+    <div id="haciendoManifiesto">
+        <center>
+            <form style="border: inset ; width: 500px; background-color: white;">
+                <h3 style=>Manifiesto de Carga</h3>
+                <table border="1" id="tablaManifiesto" style="width: 500px;">
+                    <tr>
+                        <td><strong>Origen</strong></td>
+                        <td><strong>Contenedor</strong></td>
+                        <td><strong>Importador</strong></td>
+                        <td><strong>Descripción</strong></td>
+                        <td><strong>Tipo de Mercaderia</strong></td>
+                    </tr>
+                </table>
+                <br>
+                <p id="volver11"><a href="#">Para volver a la página anterior pulse aquí.</a></p>
+            </form>
+        </center>
+    </div>
+    <!-- Sección del menú de la empresa donde se habilita un importador-->
+    <div id="habilitandoImportadores">
+        <center>
+            <form style="border: inset ; width: 600px; background-color: white;">
+                <h3 style=>Habilitar Importadoresdeshabilitados</h3>
+                <table border="1" id="tablaImportadoresDeshabilitados" style="width: 500px;">
+                    <tr>
+                        <td><strong>Estado</strong></td>
+                        <td><strong>Nombre</strong></td>
+                        <td><strong>ID</strong></td>
+                        <td><strong>Cancelaciones</strong></td>
+                    </tr>
+                </table>
+                <br>
+                <label for="idHabilitar">Introduzca el ID del importador que desea habilitar</label>
+                <br>
+                <input type="text" id="idHabilitar" placeholder="ID del importador *">
+                <br>
+                <input type="button" value="Activar" id="btnActivar">
+                <p id="volver12"><a href="#">Para volver a la página anterior pulse aquí.</a></p>
+            </form>
+        </center>
+    </div>
+    <!-- Sección del menú de la empresa donde se hace una lista de carga-->
+    <div id="haciendoListadeCarga">
+        <center>
+            <form style="border: inset ; width: 1500px; background-color: white;">
+                <h3 style=>Lista de carga peligrosa </h3>
+                <label for="slcPeligrosas">Viajes</label>
+                <select id="slcPeligrosas">
+                </select>
+                <br>
+                <input type="button" value="Mostrar" id="btnMostrarPeligrosa">
+                <br>
+                <table border="1" id="tablaPeligrosas" style="width: 1500px;">
+                    <tr>
+                        <td><strong>Estado</strong></td>
+                        <td><strong>Tipo</strong></td>
+                        <td><strong>Descripción</strong></td>
+                        <td><strong>Puerto de Origen</strong></td>
+                        <td><strong>ID de la empresa</strong></td>
+                        <td><strong>Nombre de la empresa</strong></td>
+                        <td><strong>ID del importador</strong></td>
+                        <td><strong>Nombre del importador</strong></td>
+                        <td><strong>ID del viaje</strong></td>
+                        <td><strong>Cantidad de contenedores</strong></td>
+                        <td><strong>Nombre del buque</strong></td>
+                        <td><strong>Fecha de partida</strong></td>
+                        <td><strong>Fecha de llegada</strong></td>
+                    </tr>
+                </table>
+                <p id="volver13"><a href="#">Para volver a la página anterior pulse aquí.</a></p>
+            </form>
+        </center>
+    </div>
+
+</body>
+<script src="/funciones.js"></script>
+
+</html>

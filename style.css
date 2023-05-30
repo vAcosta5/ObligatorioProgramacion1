@@ -1,0 +1,24 @@
+h3{
+   border: outset ; 
+   background-color:rgb(241, 77, 77) ; 
+   color: white;
+}
+
+h5 {
+   color: red 
+}
+
+.formulario {
+   width: 300px; 
+   text-align: center; 
+   border-style: inset; 
+   background-color: aliceblue;
+}
+
+.tamanioInput {
+   width:240px; 
+   height:35px; 
+   text-align: center; 
+   border-style: inset; 
+   background-color: aliceblue;
+}
